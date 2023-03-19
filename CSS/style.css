@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 56px;
+}
+  
+/* HEADER style start*/
+
+.wrapper{
+    max-width: 1219px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #007765;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header_wrapper{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.header_logo{
+    padding-top: 6px;
+}
+
+.header_list{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item{
+
+    margin-right: 8px;
+
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+.header_link{
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+
+}
+
+.header_link:hover{
+
+    background-size: 100% 2px;
+
+}
+
+
+/* HEADER style end*/
+
+
+/*  MAIN style start*/
+
+
+
+
+
+.jumbotron_title-text{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+    
+
+    
+}
+
+.jumbotron_wrap{
+
+    background: url(../Images/bcg1.png) center center no-repeat;
+    background-size: cover;
+    padding: 160px 0 160px;
+}
+
+.problem_wrap{
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.problem_wrap_title{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+    padding: 40px 55px;
+}
+
+.problem_wrap_text{
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    text-align: justify;
+    padding: 16px 55px 92px;
+}
+
+
+
+
+.container {
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  
+  .hero {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url('https://i.ibb.co/PM6cMBn/image.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .hero__message {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .introducing_wrap{
+    box-sizing: border-box;
+    max-width: 1219px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+
+  }
+
+  .introducing_content_wlogo{
+    display: flex;
+  }
+
+  .introducing_content{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    text-align: justify;
+    padding: 16px 55px 92px;
+
+  }
+  .introducing_content_title_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+    padding: 40px 55px;}
+
+    .introducing_content_wlogo_text{
+        padding-left: 40px;
+        padding-bottom: 40px;
+    }
+
+
+    .team{
+         background: #EEEEEE;
+        ;
+    }
+    .team_wrap{
+        box-sizing: border-box;
+        max-width: 1219px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    
+    .team_content_title_text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: #007765;
+        padding: 40px 55px;
+    }
+    .team_content_line{
+        padding: 46px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    .member{
+        width: 33.3%;
+        padding-bottom: 82px;
+        
+    }
+
+   
+    .member h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #007765;
+    }
+    .member p{
+
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+
+/* MAIN style end*/
+
+/* FOOTER style start*/
+
+.footer{
+    background: #333333;
+}
+
+.footer_text_txt{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 50px 375px 60px;
+
+}
+
+
+
+
+/* FOOTEr style end*/
